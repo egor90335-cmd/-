@@ -1,0 +1,84 @@
+<!-- ФАЙЛ: index.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ракушечка — турагентство</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Ракушечка</h1>
+            <p class="tagline">Ваш идеальный отдых начинается здесь</p>
+        </div>
+    </header>
+
+    <main>
+        <!-- О компании -->
+        <section class="about container">
+            <h2>О нашем агентстве</h2>
+            <p>Турагентство «Ракушечка» помогает воплотить мечты об отпуске с 2010 года. Мы подбираем туры, которые идеально подходят именно вам: от активных приключений до безмятежного релакса. Доверьтесь нашему опыту, и ваше путешествие станет настоящей жемчужиной воспоминаний.</p>
+            <button id="tourBtn" class="btn btn-cta">Подобрать тур</button>
+        </section>
+
+        <!-- Виды отдыха -->
+        <section class="tours container">
+            <h2>Мы предлагаем</h2>
+            <div class="tours-grid">
+                <div class="tour-card">
+                    <span class="tour-icon"></span>
+                    <h3>Активный</h3>
+                    <p>Сёрфинг, дайвинг, треккинг — для тех, кто не любит сидеть на месте.</p>
+                </div>
+                <div class="tour-card">
+                    <span class="tour-icon"></span>
+                    <h3>Релакс</h3>
+                    <p>Спа-курорты, йога на берегу и полное отключение от забот.</p>
+                </div>
+                <div class="tour-card">
+                    <span class="tour-icon"></span>
+                    <h3>Семейный</h3>
+                    <p>Отели с анимацией, безопасные пляжи и развлечения для всех возрастов.</p>
+                </div>
+                <div class="tour-card">
+                    <span class="tour-icon"></span>
+                    <h3>Корпоративный</h3>
+                    <p>Тимбилдинги, конференции на море и выездные мероприятия.</p>
+                </div>
+                <div class="tour-card">
+                    <span class="tour-icon"></span>
+                    <h3>Пляжный</h3>
+                    <p>Белоснежный песок, лазурное море и бесконечный горизонт.</p>
+                </div>
+                <div class="tour-card">
+                    <span class="tour-icon"></span>
+                    <h3>Экскурсионный</h3>
+                    <p>Древние города, музеи и гастрономические прогулки с гидом.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Форма заявки -->
+        <section class="contact container">
+            <h2>Оставьте заявку</h2>
+            <form id="contactForm" class="contact-form">
+                <input type="text" name="name" placeholder="Ваше имя" required>
+                <input type="tel" name="phone" placeholder="Телефон" required>
+                <input type="email" name="email" placeholder="E-mail">
+                <textarea name="message" rows="3" placeholder="Ваши пожелания"></textarea>
+                <button type="submit" class="btn btn-submit">Отправить заявку</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>2026 © Ракушечка. Все берега открыты.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
